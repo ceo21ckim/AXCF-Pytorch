@@ -5,3 +5,9 @@ It was originally put together for the Yelp Dataset Challenge which is a chance 
 In the most recent dataset you'll find information about businesses across 8 metropolitan areas in the USA and Canada.
 
 - download url: [here](https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset)
+
+
+```
+# if environment is linux, use code follow as:
+!tar -xvf filename.tar
+```
