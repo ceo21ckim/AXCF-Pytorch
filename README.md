@@ -22,14 +22,14 @@ In this paper, use SemEval2014, SemEval2015, and SemEval2016.
 |--------:|:--------:|:--------:|:--------:|
 | **Sentence #Total** | 5,959 | 851 | 1,703 |
 | **Aspect #Positive** | 3,050 | 422 | 744 |
-| ** #Negatvie ** | 1,181 | 137 | 290 |
-| ** #Neutral ** | 673 | 20 | 60 |
-| ** #Total ** | 4,904 | 579 | 1,094 |
+| **#Negatvie** | 1,181 | 137 | 290 |
+| **#Neutral** | 673 | 20 | 60 |
+| **#Total** | 4,904 | 579 | 1,094 |
 
 ### Yelp2018
 
 | **Dataset** | Users | Restaurant | Interaction |
 |:-------:|:-------:|:-------:|:-------:|
-| ** Train ** | - | - | - |
-| ** Valid ** | - | - | - |
-| ** Test ** | - | - | - |
+| **Train** | - | - | - |
+| **Valid** | - | - | - |
+| **Test** | - | - | - |
