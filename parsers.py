@@ -1,5 +1,5 @@
 import argparse
-from settings import * 
+from __init__ import * 
 
 parser = argparse.ArgumentParser(description='setting parameter for training and evaluating..')
 

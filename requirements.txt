@@ -1,0 +1,5 @@
+torch==1.10.0
+transformers==4.24.0
+pandas
+numpy
+matplotlib

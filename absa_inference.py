@@ -3,10 +3,7 @@ import pickle
 from transformers import BertTokenizer, BertConfig
 import torch 
 
-from seq_utils import * 
-from settings import * 
-from glue_utils import * 
-from utils import * 
+from absa_utils import * 
 from parsers import args 
 
 from models.bert import *
