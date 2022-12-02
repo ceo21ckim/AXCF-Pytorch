@@ -10,6 +10,12 @@ Aspect-aware eXplainable Collaborative Filtering
 - pandas==1.3.5
 - numpy==1.19.5
 
+## Experiment setting
+
+- NVIDIA GeForce RTX 3080 Ti 12GB
+- i9-11900F 127RAM
+- cuda 11.3 version
+
 ## Datasets
 
 ### SemEval
@@ -33,6 +39,38 @@ In this paper, use SemEval2014, SemEval2015, and SemEval2016.
 | **Train** | - | - | - |
 | **Valid** | - | - | - |
 | **Test** | - | - | - |
+
+
+## Docker 
+**1.clone this repository**
+``` 
+git clone https://github.com/ceo21ckim/AXCF-Pytorch.git
+cd AXCF-Pytorch
+```
+
+**2.build Dockerfile**
+```
+docker build --tag [filename]:1.0 .
+```
+
+**3.execute**
+
+```
+# Docker version 2.0 or later.
+docker run --itd --runtime=nvidia --name axcf -p 8888:8888 -v C:\Users\Name\:/workspace AXCF:1.0 /bin/bash
+```
+
+```
+# Docker-ce 19.03 or later
+docker run -itd --gpus all --name axcf -p 8888:8888 -v C:\Users\Name\:/workspace AXCF:1.0 /bin/bash
+```
+
+**4.use jupyter notebook**
+```
+docker exec -it axcf bash
+
+jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root
+```
 
 ## Execute
 
