@@ -13,7 +13,7 @@ Aspect-aware eXplainable Collaborative Filtering
 ## Experiment setting
 
 - NVIDIA GeForce RTX 3080 Ti 12GB
-- i9-11900F 127RAM
+- i9-11900F RAM 128GB
 - cuda 11.3 version
 
 ## Datasets
