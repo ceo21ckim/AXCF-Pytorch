@@ -3,10 +3,10 @@ import pickle
 from transformers import BertTokenizer, BertConfig
 from torch import optim 
 from __init__ import * 
-from absa_utils import * 
-from parsers import args
 
-from absa_bert import BertABSATagger
+from utils import * 
+from bert import BertABSATagger
+from parsers import args
 
 
 if __name__ == '__main__':
