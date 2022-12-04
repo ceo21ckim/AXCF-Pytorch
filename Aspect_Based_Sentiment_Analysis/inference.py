@@ -3,10 +3,9 @@ import pickle
 from transformers import BertTokenizer, BertConfig
 import torch 
 
-from absa_utils import * 
+from utils import * 
+from bert import *
 from parsers import args 
-
-from absa_bert import *
 
 output_dir = f'{args.model_type}-{args.absa_type}'
 args.output_dir = output_dir
