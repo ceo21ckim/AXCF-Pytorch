@@ -34,7 +34,7 @@ In this paper, use SemEval2014, SemEval2015, and SemEval2016.
 
 ### Yelp2018
 
-| **Dataset** | Users | Restaurant | Interaction | Sparsity }
+| **Dataset** | Users | Restaurant | Interaction | Sparsity |
 |:-------:|:-------:|:-------:|:-------:| :------: |
 | **Train** | 25,369 | 45,452 | 868,742 | 99.92% |
 | **Valid** | 23,354 | 26,719 | 96,524 | 99.98% |
