@@ -34,11 +34,12 @@ In this paper, use SemEval2014, SemEval2015, and SemEval2016.
 
 ### Yelp2018
 
-| **Dataset** | Users | Restaurant | Interaction |
-|:-------:|:-------:|:-------:|:-------:|
-| **Train** | - | - | - |
-| **Valid** | - | - | - |
-| **Test** | - | - | - |
+| **Dataset** | Users | Restaurant | Interaction | Sparsity }
+|:-------:|:-------:|:-------:|:-------:| :------: |
+| **Train** | 25,369 | 45,452 | 868,742 | 99.92% |
+| **Valid** | 23,354 | 26,719 | 96,524 | 99.98% |
+| **Test** | 25,307 | 36,150 | 241,315 | 99.97% |
+| **Total**| 25,369 | 46,613 | 1,206,587 | 99.90% |
 
 
 ## Docker 
@@ -82,4 +83,26 @@ python train.py --semeval_dir dataset/SemEval --yelp_dir dataset/Yelp2018 --fix_
                 --save_steps 100 --seed 42 --warmup_steps 0 \
                 --model_name_or_path bert-base-uncased \
                 --max_grad_norm 1.0 --device cuda
+```
+
+
+## Recommender Systems
+
+### BERT
+
+```
+python bert_train.py --max_seq_length 128 --dr_rate 0.3 --hidden_dim 312 \
+                     --model_name_or_path huawei-noah/TinyBERT_General_4L_312D \
+                     --learning_rate 1e-5 --batch_size 32 \
+                     --num_epochs 100 --device cuda
+                     
+```
+
+### LSTM
+
+```
+python lstm_train.py --max_seq_length 128 --dr_rate 0.0 --hidden_dim 64 \
+                     --num_layers 2 --bidirectional --learning_rate 1e-3 \
+                     --batch_size 2048 --num_epochs 100
+                     
 ```
