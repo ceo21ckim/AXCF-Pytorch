@@ -8,7 +8,8 @@ Aspect-aware eXplainable Collaborative Filtering
 - transformers==4.24.0
 - pandas==1.3.5
 - numpy==1.19.5
-- matplotlib
+- matplotlib==3.5.3
+- dgl==0.9.1
 
 ## Experiment setting
 
