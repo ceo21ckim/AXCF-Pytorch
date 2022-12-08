@@ -10,6 +10,7 @@ Aspect-aware eXplainable Collaborative Filtering
 - numpy==1.19.5
 - matplotlib==3.5.3
 - dgl==0.9.1
+- gensim
 
 ## Experiment setting
 
