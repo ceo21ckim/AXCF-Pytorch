@@ -75,34 +75,8 @@ jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root
 
 ## Execute
 
-## Aspect_Based_Sentiment_Analysis
-
 ```
-python train.py --semeval_dir dataset/SemEval --yelp_dir dataset/Yelp2018 --fix_tfm 0 \
-                --max_seq_length 512 --num_epochs 10 --batch_size 128 \
-                --save_steps 100 --seed 42 --warmup_steps 0 \
-                --model_name_or_path bert-base-uncased \
-                --max_grad_norm 1.0 --device cuda
-```
+python train.py --learning_rate 1e-4 --latent_dim 512 --num_epochs 400 --batch_size 512 --seed 42 --device cuda --num_users 25_369 \
+                --num_items 44_553 --model GMF --criterion BCE --optimizer Adam --max_length 256 --num_layers 2 --bidirectional True --dr_rate 0
 
-
-## Recommender Systems
-
-### BERT
-
-```
-python bert_train.py --max_seq_length 128 --dr_rate 0.3 --hidden_dim 312 \
-                     --model_name_or_path huawei-noah/TinyBERT_General_4L_312D \
-                     --learning_rate 1e-5 --batch_size 32 \
-                     --num_epochs 100 --device cuda
-                     
-```
-
-### LSTM
-
-```
-python lstm_train.py --max_seq_length 128 --dr_rate 0.0 --hidden_dim 64 \
-                     --num_layers 2 --bidirectional --learning_rate 1e-3 \
-                     --batch_size 2048 --num_epochs 100
-                     
 ```
