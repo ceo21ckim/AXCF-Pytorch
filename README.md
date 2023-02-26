@@ -76,7 +76,9 @@ jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root
 ## Execute
 
 ```
-python train.py --learning_rate 1e-4 --latent_dim 512 --num_epochs 400 --batch_size 512 --seed 42 --device cuda --num_users 25_369 \
-                --num_items 44_553 --model GMF --criterion BCE --optimizer Adam --max_length 256 --num_layers 2 --bidirectional True --dr_rate 0
+python train.py --learning_rate 1e-4 --latent_dim 512 --num_epochs 400 --batch_size 512 \
+                --seed 42 --device cuda --num_users 25_369 \
+                --num_items 44_553 --model GMF --criterion BCE --optimizer Adam \
+                --max_length 256 --num_layers 2 --bidirectional True --dr_rate 0
 
 ```
